@@ -1,0 +1,1 @@
+export function DealCard({deal}:{deal:any}){return <article className="card"><h3>{deal.title}</h3><p>₹{Number(deal.priceInr||0).toLocaleString("en-IN")}</p><span className="pill">{deal.areaSqft||"?"} sq ft {deal.areaType}</span></article>}

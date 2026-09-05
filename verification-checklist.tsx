@@ -1,0 +1,1 @@
+export function VerificationChecklist(){return <ul><li>MahaRERA project and promoter evidence</li><li>Project status and completion dates</li><li>Approved-plan evidence</li><li>Carpet-area evidence</li><li>IGR e-ASR reference</li><li>Property e-Search records</li><li>Independent title, valuation and technical review</li></ul>}

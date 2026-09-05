@@ -1,0 +1,1 @@
+import {describe,it,expect} from "vitest";import {redFlags} from "../lib/redflags";describe("red flags",()=>{it("flags missing verification",()=>expect(redFlags({areaType:"built_up",verified:false,annualCashFlow:-1,comparableCount:0}).length).toBeGreaterThan(2))})

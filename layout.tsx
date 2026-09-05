@@ -1,0 +1,1 @@
+import "./globals.css";export const metadata={title:"EstateWise AI",description:"Transparent Maharashtra real-estate deal analysis"};export default function Layout({children}:{children:React.ReactNode}){return <html lang="en"><body>{children}</body></html>}

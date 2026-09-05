@@ -1,0 +1,3 @@
+import {openai} from "./openai";import {ListingSchema} from "./schemas";export async function extractListing(markdown:string,url:string){const r=await openai().responses.create({model:process.env.OPENAI_MODEL||"gpt-5-mini",instructions:"Extract only explicit listing claims. Never infer RERA approval, legal title, approved plans, carpet area, future price, rent, or possession when absent. Return JSON matching the supplied fields with evidence quotes, missing fields and confidence.",input:`URL: ${url}
+CONTENT:
+${markdown}`});return ListingSchema.parse({...JSON.parse(r.output_text),sourceUrl:url})}
